@@ -41,7 +41,8 @@ h4 {
 }
 
 .background-text {
-    /* display: flex; */
+    display: flex;
+    flex-direction: column;
     /* width: 30%; */
     text-align: center;
     align-items: center;
@@ -49,20 +50,26 @@ h4 {
     width: 30%;
 }
 
+.link-icons {
+    display: flex;
+    flex-direction: row;
+}
+
+.link-icons a {
+    margin: 5px;
+}
+
 .background-text img {
     width: 25px;
     max-height: 25px;
 }
 
-/* .background-text p {
-    display: flex;
-    width: 30%;
-    text-align: center;
-    align-items: center;
-    margin: 0 50px 0 0;
-} */
+.background-text a {
+    display: block;
+    width: 25px;
+}
 
-.background img {
+.background-image {
     height: 300px;
     max-width: 300px;
     border-radius: 25px;
