@@ -1,5 +1,10 @@
 body {
-    margin: 10px;
+    /* margin: 10px; */
+    display: grid;
+}
+
+h1 {
+    font-size: 46px;
 }
 
 h2 {
@@ -19,11 +24,61 @@ a {
 }
 
 .intro {
+    margin: 200px 0;
     display: flex;
     flex-direction: column;
+    background-color: lightgreen;
 }
 
-.intro-task {
+.intro * {
+    /* margin-top: 5px;
+    margin-bottom: 5px; */
+    margin: 5px 0;
+}
+
+.flip-sentence {
+    display: flex;
+}
+
+.flip-words {
+    overflow: hidden;
+    height: 1em;
+}
+
+.flip-word {
+    display: block;
+    margin: 0 0 0 0.2em;
+    animation: spin_words 6s infinite;
+}
+
+@keyframes spin_words{
+    10%{
+        transform: translateY(-112%);
+    }
+    25%{
+        transform: translateY(-100%);
+    }
+    35%{
+        transform: translateY(-212%);
+    }
+    50%{
+        transform: translateY(-200%);
+    }
+    60%{
+        transform: translateY(-312%);
+    }
+    75%{
+        transform: translateY(-300%);
+    }
+    85%{
+        transform: translateY(-412%);
+    }
+    100%{
+        transform: translateY(-400%);
+    }
+}
+
+/* .intro-task {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -36,7 +91,7 @@ a {
 .intro-task img {
     max-width: 25px;
     max-height: 25px;
-}
+} */
 
 .background-content {
     display: flex;
