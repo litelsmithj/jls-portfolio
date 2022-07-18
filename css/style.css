@@ -1,5 +1,11 @@
+/* General formatting */
 body {
-    margin: 10px;
+    display: grid;
+    margin: 0px;
+}
+
+h1 {
+    font-size: 46px;
 }
 
 h2 {
@@ -18,36 +24,86 @@ a {
     text-decoration: none;
 }
 
+/* Header */
+header {
+    background-color: lightgreen;
+    padding: 0 50px;
+}
+
+/* Intro */
 .intro {
+    background-color: lightgreen;
+    /* background-image: url("../img/mountain-busy.png");
+    background-size: cover;
+    background-repeat: no-repeat; */
+    padding: 300px 0 25px 50px;
     display: flex;
     flex-direction: column;
 }
 
-.intro-task {
+.intro * {
+    margin: 5px 0;
+}
+
+.flip-sentence {
     display: flex;
-    flex-direction: row;
-    align-items: center;
 }
 
-.intro-task * {
-    margin: 5px;
+.flip-words {
+    overflow: hidden;
+    height: 1.2em;
 }
 
-.intro-task img {
-    max-width: 25px;
-    max-height: 25px;
+.flip-word {
+    display: block;
+    margin: 0 0 0 0.2em;
+    animation: spin_words 6s infinite;
+}
+
+@keyframes spin_words{
+    4% {
+        transform: translateY(0%);
+    }
+    12%{
+        transform: translateY(-112%);
+    }
+    25%{
+        transform: translateY(-100%);
+    }
+    35%{
+        transform: translateY(-212%);
+    }
+    50%{
+        transform: translateY(-200%);
+    }
+    60%{
+        transform: translateY(-312%);
+    }
+    75%{
+        transform: translateY(-300%);
+    }
+    85%{
+        transform: translateY(-412%);
+    }
+    100%{
+        transform: translateY(-400%);
+    }
+}
+
+/* Background Section */
+.background {
+    padding: 100px 10px 0 10px;
+    background-color: white;
 }
 
 .background-content {
     display: flex;
     flex-direction: row;
-    /* width: 50%; */
 }
 
 .background-text {
     display: flex;
     flex-direction: column;
-    /* width: 30%; */
     text-align: center;
     align-items: center;
     margin: 0 50px 0 0;
@@ -79,6 +135,11 @@ a {
     border-radius: 25px;
 }
 
+/* Projects */
+.projects {
+    padding: 10px;
+}
+
 .project-skills span {
     border: 1px solid black;
     border-radius: 5px;
@@ -103,6 +164,11 @@ a {
     height: 15px;
     max-width: 15px;
     margin-left: 5px;
+}
+
+/* Skills */
+.skills {
+    padding: 10px;
 }
 
 .skill-icons-grid {
@@ -137,7 +203,6 @@ a {
 .skill-icon img {
     max-width: 100%;
     max-height: 100%;
-    /* filter: brightness(0%) */
 }
 
 .skill-icon img:hover {
