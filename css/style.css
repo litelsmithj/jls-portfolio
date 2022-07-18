@@ -1,6 +1,6 @@
 body {
-    /* margin: 10px; */
     display: grid;
+    background-color: lightgreen;
 }
 
 h1 {
@@ -24,15 +24,12 @@ a {
 }
 
 .intro {
-    margin: 200px 0;
+    margin: 300px 50px;
     display: flex;
     flex-direction: column;
-    background-color: lightgreen;
 }
 
 .intro * {
-    /* margin-top: 5px;
-    margin-bottom: 5px; */
     margin: 5px 0;
 }
 
@@ -42,7 +39,7 @@ a {
 
 .flip-words {
     overflow: hidden;
-    height: 1em;
+    height: 1.2em;
 }
 
 .flip-word {
@@ -52,7 +49,10 @@ a {
 }
 
 @keyframes spin_words{
-    10%{
+    4% {
+        transform: translateY(0%);
+    }
+    12%{
         transform: translateY(-112%);
     }
     25%{
@@ -77,21 +77,6 @@ a {
         transform: translateY(-400%);
     }
 }
-
-/* .intro-task {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.intro-task * {
-    margin: 5px;
-}
-
-.intro-task img {
-    max-width: 25px;
-    max-height: 25px;
-} */
 
 .background-content {
     display: flex;
