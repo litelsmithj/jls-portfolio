@@ -33,6 +33,9 @@ header {
 /* Intro */
 .intro {
     background-color: lightgreen;
+    /* background-image: url("../img/mountain-busy.png");
+    background-size: cover;
+    background-repeat: no-repeat; */
     padding: 300px 0 25px 50px;
     display: flex;
     flex-direction: column;
