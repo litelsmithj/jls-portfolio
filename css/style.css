@@ -1,7 +1,11 @@
 /* General formatting */
 body {
     display: grid;
-    margin: 0px;
+    margin: 0;
+    /* padding: 0 50px; */
+    background-image: url("../img/mountain_landscape.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 h1 {
@@ -26,16 +30,17 @@ a {
 
 /* Header */
 header {
-    background-color: lightgreen;
     padding: 0 50px;
 }
 
+/* .intro, header {
+    background-image: url("../img/mountain_landscape.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+} */
+
 /* Intro */
 .intro {
-    background-color: lightgreen;
-    /* background-image: url("../img/mountain-busy.png");
-    background-size: cover;
-    background-repeat: no-repeat; */
     padding: 300px 0 25px 50px;
     display: flex;
     flex-direction: column;
@@ -92,7 +97,7 @@ header {
 
 /* Background Section */
 .background {
-    padding: 100px 10px 0 10px;
+    padding: 100px 50px 0 50px;
     background-color: white;
 }
 
@@ -137,7 +142,7 @@ header {
 
 /* Projects */
 .projects {
-    padding: 10px;
+    padding: 50px;
 }
 
 .project-skills span {
@@ -168,7 +173,7 @@ header {
 
 /* Skills */
 .skills {
-    padding: 10px;
+    padding: 0 50px;
 }
 
 .skill-icons-grid {
