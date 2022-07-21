@@ -1,8 +1,8 @@
 /* General formatting */
 body {
     display: grid;
-    margin: 0;
-    /* padding: 0 50px; */
+    margin: 0 auto;
+    max-width: 960px;
     background-image: url("../img/mountain_landscape.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
@@ -13,36 +13,31 @@ h1 {
 }
 
 h2 {
-    font-size: 20px;
+    font-size: 32px;
 }
 
 h3 {
-    font-size: 18px;
+    font-size: 28px;
 }
 
 h4 {
-    font-size: 14px;
+    font-size: 22px;
+}
+
+p {
+    font-size: 20px;
 }
 
 a {
     text-decoration: none;
 }
 
-/* Header */
-header {
-    padding: 0 50px;
-}
-
-/* .intro, header {
-    background-image: url("../img/mountain_landscape.jpg");
-    background-size: 100%;
-    background-repeat: no-repeat;
-} */
-
 /* Intro */
 .intro {
-    padding: 300px 0 25px 50px;
+    padding: 40% 0 60% 0;
     display: flex;
+    align-items: center;
+    text-align: left;
     flex-direction: column;
 }
 
@@ -97,22 +92,23 @@ header {
 
 /* Background Section */
 .background {
-    padding: 100px 50px 0 50px;
+    padding: 10px 0 0 0;
     background-color: white;
 }
 
 .background-content {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .background-text {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    text-align: left;
     align-items: center;
     margin: 0 50px 0 0;
-    width: 30%;
+    width: 50%;
 }
 
 .link-icons {
@@ -142,7 +138,7 @@ header {
 
 /* Projects */
 .projects {
-    padding: 50px;
+    padding: 50px 0;
 }
 
 .project-skills span {
@@ -173,7 +169,7 @@ header {
 
 /* Skills */
 .skills {
-    padding: 0 50px;
+    padding: 0 0 50px 0;
 }
 
 .skill-icons-grid {
