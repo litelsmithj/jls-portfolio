@@ -167,9 +167,13 @@ a {
 }
 
 .projects img {
-    height: 15px;
-    max-width: 15px;
+    height: 25px;
+    max-width: 25px;
     margin-left: 5px;
+}
+
+.projects a span {
+    font-size: 32px;
 }
 
 /* Skills */
